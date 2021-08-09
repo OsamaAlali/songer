@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
+<form action="#" th:action="@{/addalbums}" th:object="${album}" method="post">
+<p>title: <input type="text" field="*{title}" name="title"/></p>
+<p>artist: <input type="text" field="*{artist}" name="artist"/></p>
+<p>imageUrl: <input type="text" field="*{imageUrl}" name="imageUrl"/></p>
+<p>songCount: <input type="text" field="*{songCount}" name="songCount"/></p>
+<p>length: <input type="text" field="*{length}" name="length"/></p>
+<p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+
 <div th:each="list: ${list}">
 
   <P>Title : <samp th:text="${list.title}"></samp></P>
