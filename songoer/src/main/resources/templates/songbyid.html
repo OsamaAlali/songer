@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:each="i:song">
+  <p> title : <samp text="${i.title} "></samp>  </p>
+  <p> Length : <samp text="${i.length} "></samp>  </p>
+  <p> TrackNumber : <samp text="${i.trackNumber} "></samp>  </p>
+
+
+</div>
+</body>
+</html>
