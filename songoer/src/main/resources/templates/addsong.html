@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Song</title>
+</head>
+<body>
+<form action="#" th:action="@{/add-song}" th:object="${song}" method="post">
+  <p>title: <input type="text" field="*{title}" name="title"/></p>
+
+  <p>length: <input type="text" field="*{length}" name="length"/></p>
+
+  <p>TrackNumber: <input type="text" field="*{trackNumber}" name="trackNumber"/></p>
+
+  <p><input type="submit" value="Add" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
